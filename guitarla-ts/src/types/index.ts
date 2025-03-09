@@ -25,6 +25,15 @@ export type Guitar = {
 // }
 
 //CartItem
+
+//Seleccionar ciertos atributos
+// export type CartItem = Pick<Guitar, 'id'|'name'|'price'> &{
+//     quantity:number
+// }
+
 export type CartItem = Guitar &{ 
     quantity:number
 }
+
+
+
