@@ -4,8 +4,9 @@ import './assets/normalize.css' // Normaliza los estilos de la pagina
 import './index.css'
 import App from './App.jsx'
 
+// ! <- Assertion not null
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
   </StrictMode>,

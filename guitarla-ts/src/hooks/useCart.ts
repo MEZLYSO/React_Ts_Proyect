@@ -1,15 +1,16 @@
+import type { CartItem } from "../types/index"
 import { useEffect, useState, useMemo } from "react"
 import { db } from "../data/db"
 
 // Custom hook
 const useCart = () =>{
     
-    const initialCart = () => {
+    const initialCart = () :CartItem[]=> {
         const localStorageItem = localStorage.getItem('cart')
         return localStorageItem?JSON.parse(localStorageItem):[]
     }
 
-    const [data,setData] = useState(db)
+    const [data] = useState(db)
     const [cart,setCart] = useState(initialCart)
 
     const MAX_ITEMS = 5
