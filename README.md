@@ -9,9 +9,9 @@
 
 ### Descripcion
 
-Proyecto basico de un carrito de compras donde se utilizo de manera basica React+TS+Vite+Boostrap
+Migracion del poryecto basico de un carrito de compras donde se utilizo de manera basica React+TS+Vite+Boostrap
 En este se incluyeron elementos como el carrito, vaciado de carrito, total de compras y acumulado de compras
-asi como almacenamiento del carrito en LocalStorage.
+asi como almacenamiento del carrito en LocalStorage. Usando Ts
 
 Deploy Link: https://guitar-la-type-script.netlify.app/
 
