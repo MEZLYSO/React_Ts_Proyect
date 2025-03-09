@@ -1,6 +1,24 @@
-import useCart from "../hooks/useCart"
+import type { CartItem,Guitar } from "../types"
 
-function Header({cart, removeFromCart,incrementQuantity,decrementQuantity,clearCart,isEmpty,cartTotal}){
+type HeaderProps = {
+    cart:CartItem[]
+    removeFromCart:(id:Guitar['id'])=>void
+    incrementQuantity:(id:Guitar['id'])=>void
+    decrementQuantity:(id:Guitar['id'])=>void
+    clearCart:()=>void
+    isEmpty:boolean
+    cartTotal:number
+}
+
+function Header({
+    cart, 
+    removeFromCart,
+    incrementQuantity,
+    decrementQuantity,
+    clearCart,
+    isEmpty,
+    cartTotal
+    }:HeaderProps){
 
     return (
         // En esta seccion va la vista
